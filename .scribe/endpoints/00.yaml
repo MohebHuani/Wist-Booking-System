@@ -1,0 +1,363 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: jenkins.annamarie@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 5 characters.'
+        required: true
+        example: 'n^E2!a4(^?i'
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: jenkins.annamarie@example.com
+      password: 'n^E2!a4(^?i'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: fledner@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: incidunt
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: fledner@example.com
+      password: incidunt
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/auth/logout
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/hotels
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":93,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":157,"email":"amirfsssz@gmail.com"},{"id":158,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":92,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":155,"email":"amirfsssz@gmail.com"},{"id":156,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":91,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":153,"email":"amirfsssz@gmail.com"},{"id":154,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":90,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":151,"email":"amirfsssz@gmail.com"},{"id":152,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":89,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":149,"email":"amirfsssz@gmail.com"},{"id":150,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":88,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":147,"email":"amirfsssz@gmail.com"},{"id":148,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":87,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":145,"email":"amirfsssz@gmail.com"},{"id":146,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":86,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":143,"email":"amirfsssz@gmail.com"},{"id":144,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":85,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":141,"email":"amirfsssz@gmail.com"},{"id":142,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":84,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":139,"email":"amirfsssz@gmail.com"},{"id":140,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":83,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":137,"email":"amirfsssz@gmail.com"},{"id":138,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":82,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":135,"email":"amirfsssz@gmail.com"},{"id":136,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":81,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":133,"email":"amirfsssz@gmail.com"},{"id":134,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":80,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":131,"email":"amirfsssz@gmail.com"},{"id":132,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":79,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":129,"email":"amirfsssz@gmail.com"},{"id":130,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":78,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":127,"email":"amirfsssz@gmail.com"},{"id":128,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":77,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":125,"email":"amirfsssz@gmail.com"},{"id":126,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":76,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":123,"email":"amirfsssz@gmail.com"},{"id":124,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":75,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":121,"email":"amirfsssz@gmail.com"},{"id":122,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":74,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":119,"email":"amirfsssz@gmail.com"},{"id":120,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":73,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":117,"email":"amirfsssz@gmail.com"},{"id":118,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":72,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":71,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":70,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":69,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":68,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":67,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":66,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":65,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":64,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":63,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":62,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":115,"email":"amirfsssz@gmail.com"},{"id":116,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":61,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":113,"email":"amirfsssz@gmail.com"},{"id":114,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":60,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":111,"email":"amirfsssz@gmail.com"},{"id":112,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":59,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":109,"email":"amirfsssz@gmail.com"},{"id":110,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":58,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":107,"email":"amirfsssz@gmail.com"},{"id":108,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":57,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":105,"email":"amirfsssz@gmail.com"},{"id":106,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":56,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":103,"email":"amirfsssz@gmail.com"},{"id":104,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":55,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":101,"email":"amirfsssz@gmail.com"},{"id":102,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":54,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":99,"email":"amirfsssz@gmail.com"},{"id":100,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":53,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":97,"email":"amirfsssz@gmail.com"},{"id":98,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":52,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":95,"email":"amirfsssz@gmail.com"},{"id":96,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":51,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":93,"email":"amirfsssz@gmail.com"},{"id":94,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":50,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":91,"email":"amirfsssz@gmail.com"},{"id":92,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":49,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":89,"email":"amirfsssz@gmail.com"},{"id":90,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":48,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":87,"email":"amirfsssz@gmail.com"},{"id":88,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":47,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":85,"email":"amirfsssz@gmail.com"},{"id":86,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":46,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":83,"email":"amirfsssz@gmail.com"},{"id":84,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":45,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":81,"email":"amirfsssz@gmail.com"},{"id":82,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":44,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":79,"email":"amirfsssz@gmail.com"},{"id":80,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":43,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":77,"email":"amirfsssz@gmail.com"},{"id":78,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":42,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":75,"email":"amirfsssz@gmail.com"},{"id":76,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":41,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":73,"email":"amirfsssz@gmail.com"},{"id":74,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":40,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":71,"email":"amirfsssz@gmail.com"},{"id":72,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":39,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":69,"email":"amirfsssz@gmail.com"},{"id":70,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":38,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":67,"email":"amirfsssz@gmail.com"},{"id":68,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":37,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":65,"email":"amirfsssz@gmail.com"},{"id":66,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":36,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":63,"email":"amirfsssz@gmail.com"},{"id":64,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":35,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":61,"email":"amirfsssz@gmail.com"},{"id":62,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":34,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":59,"email":"amirfsssz@gmail.com"},{"id":60,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":33,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":57,"email":"amirfsssz@gmail.com"},{"id":58,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":32,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":55,"email":"amirfsssz@gmail.com"},{"id":56,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":31,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":53,"email":"amirfsssz@gmail.com"},{"id":54,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":30,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":51,"email":"amirfsssz@gmail.com"},{"id":52,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":29,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":49,"email":"amirfsssz@gmail.com"},{"id":50,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":28,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":47,"email":"amirfsssz@gmail.com"},{"id":48,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":27,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":45,"email":"amirfsssz@gmail.com"},{"id":46,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":26,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":43,"email":"amirfsssz@gmail.com"},{"id":44,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":25,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":41,"email":"amirfsssz@gmail.com"},{"id":42,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":24,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":39,"email":"amirfsssz@gmail.com"},{"id":40,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":23,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":37,"email":"amirfsssz@gmail.com"},{"id":38,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":22,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":35,"email":"amirfsssz@gmail.com"},{"id":36,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":21,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":33,"email":"amirfsssz@gmail.com"},{"id":34,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":20,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":31,"email":"amirfsssz@gmail.com"},{"id":32,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":19,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":29,"email":"amirfsssz@gmail.com"},{"id":30,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":18,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":27,"email":"amirfsssz@gmail.com"},{"id":28,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":17,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":25,"email":"amirfsssz@gmail.com"},{"id":26,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":16,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":23,"email":"amirfsssz@gmail.com"},{"id":24,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":15,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":21,"email":"amirfsssz@gmail.com"},{"id":22,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":14,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":19,"email":"amirfsssz@gmail.com"},{"id":20,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":13,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":17,"email":"amirfsssz@gmail.com"},{"id":18,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":12,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":15,"email":"amirfsssz@gmail.com"},{"id":16,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":11,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[{"id":13,"email":"amirfsssz@gmail.com"},{"id":14,"email":"amiid@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":10,"name":"hotel22","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":111,"name":"\u0645\u0647\u0627\u0628\u0627\u062f","latitude":"33.527656555176","longitude":"52.21732711792"},"address":null,"emails":[{"id":11,"email":"amirfz@gmail.com"},{"id":12,"email":"ami2rfz@gmail.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":9,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":8,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":7,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":6,"name":"hotel1","title":null,"slug":null,"description":null,"moto":null,"is_confirm":false,"city":{"id":11,"name":"\u0633\u0631\u0639\u06cc\u0646","latitude":"38.137668609619","longitude":"48.076232910156"},"address":null,"emails":[],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":3,"name":"Reva Walker","title":"Dr.","slug":"dr","description":"Consequatur est minus non velit. Eum deleniti eveniet tempora consequatur qui non architecto. Ad temporibus inventore ullam. Ea dolores labore excepturi vel.","moto":"Consequatur est minus non velit. Eum deleniti eveniet tempora consequatur qui non architecto. Ad temporibus inventore ullam. Ea dolores labore excepturi vel.","is_confirm":false,"city":{"id":688,"name":"\u0645\u0628\u0627\u0631\u06a9 \u0622\u0628\u0627\u062f","latitude":"28.360181808472","longitude":"53.328701019287"},"address":{"address":"Id id aspernatur beatae. Ab molestiae consequuntur similique tenetur doloribus. Deserunt aut asperiores sunt facilis facere similique.","latitude":"641514508","longitude":"479"},"emails":[{"id":5,"email":"johnson.feeney@example.com"},{"id":6,"email":"mercedes.lebsack@example.com"}],"host":{"id":3,"national_code":415286014,"phone_number":347535855,"first_name":"Corbin Ziemann V","last_name":"Lonny Gutkowski","email":"raquel64@example.org"}},{"id":5,"name":"Dr. Carmel Wehner Jr.","title":"Dr.","slug":"dr","description":"Voluptatem repellat atque ipsam ullam et laborum. Voluptatum laudantium quia quisquam enim dolor et. Temporibus voluptatem in pariatur officiis.","moto":"Voluptatem repellat atque ipsam ullam et laborum. Voluptatum laudantium quia quisquam enim dolor et. Temporibus voluptatem in pariatur officiis.","is_confirm":false,"city":{"id":187,"name":"\u0632\u0646\u0648\u0632","latitude":"38.587993621826","longitude":"45.83438873291"},"address":{"address":"Voluptatem ut earum labore quod et sed enim. Voluptatem temporibus cupiditate aliquam quia ex. Incidunt sapiente consequatur inventore modi alias distinctio.","latitude":"336906647","longitude":"320"},"emails":[{"id":9,"email":"cassin.ophelia@example.com"},{"id":10,"email":"qmorissette@example.com"}],"host":{"id":5,"national_code":761086659,"phone_number":409493204,"first_name":"Austin Swift V","last_name":"Mohammad McCullough","email":"pbrown@example.org"}},{"id":4,"name":"Gertrude Haag","title":"Dr.","slug":"dr","description":"Molestiae fuga quasi eos explicabo perspiciatis est facere. Aut expedita ipsum dicta consequatur. Aliquam qui eius voluptas optio consectetur. Ducimus laudantium et nostrum dicta.","moto":"Molestiae fuga quasi eos explicabo perspiciatis est facere. Aut expedita ipsum dicta consequatur. Aliquam qui eius voluptas optio consectetur. Ducimus laudantium et nostrum dicta.","is_confirm":false,"city":{"id":590,"name":"\u0633\u0631\u0628\u0627\u0632","latitude":"26.633235931396","longitude":"61.258060455322"},"address":{"address":"Consequatur iure consequuntur id non perspiciatis. Ducimus earum voluptas non et. Ea cupiditate dignissimos sequi dolorum nulla qui.","latitude":"993324147","longitude":"277"},"emails":[{"id":7,"email":"stacy.klocko@example.com"},{"id":8,"email":"tianna60@example.net"}],"host":{"id":4,"national_code":994777876,"phone_number":630819675,"first_name":"Dewitt Schroeder","last_name":"Marcella Pfeffer DVM","email":"evie.kassulke@example.com"}},{"id":2,"name":"Dr. Sonny Heathcote","title":"Ms.","slug":"ms","description":"Quibusdam corporis inventore sapiente qui aut earum quia. Alias nostrum et totam corporis voluptas harum maiores sit. Praesentium aut quia dignissimos rerum suscipit incidunt perspiciatis ut.","moto":"Quibusdam corporis inventore sapiente qui aut earum quia. Alias nostrum et totam corporis voluptas harum maiores sit. Praesentium aut quia dignissimos rerum suscipit incidunt perspiciatis ut.","is_confirm":false,"city":{"id":543,"name":"\u0632\u0631\u06cc\u0646 \u0622\u0628\u0627\u062f","latitude":"36.429233551025","longitude":"48.276950836182"},"address":{"address":"Excepturi occaecati voluptatum sed nihil non quia. Ea illo soluta voluptatem ab. Qui ullam nostrum nam quas dolor facilis et cupiditate.","latitude":"845583841","longitude":"955"},"emails":[{"id":3,"email":"eriberto.parisian@example.com"},{"id":4,"email":"vgerlach@example.net"}],"host":{"id":2,"national_code":985938750,"phone_number":412351735,"first_name":"Jalen Reilly","last_name":"Mr. Gus Doyle","email":"schmidt.edwina@example.org"}}],"links":{"self":"link-value"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/hotels
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'create new hotel.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 300 characters.'
+        required: true
+        example: ijsfhhbokmurgobdk
+        type: string
+        custom: []
+      city_id:
+        name: city_id
+        description: ''
+        required: true
+        example: necessitatibus
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: ijsfhhbokmurgobdk
+      city_id: necessitatibus
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/hotels/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the hotel.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":2,"name":"Dr. Sonny Heathcote","title":"Ms.","slug":"ms","description":"Quibusdam corporis inventore sapiente qui aut earum quia. Alias nostrum et totam corporis voluptas harum maiores sit. Praesentium aut quia dignissimos rerum suscipit incidunt perspiciatis ut.","moto":"Quibusdam corporis inventore sapiente qui aut earum quia. Alias nostrum et totam corporis voluptas harum maiores sit. Praesentium aut quia dignissimos rerum suscipit incidunt perspiciatis ut.","is_confirm":false,"city":{"id":543,"name":"\u0632\u0631\u06cc\u0646 \u0622\u0628\u0627\u062f","latitude":"36.429233551025","longitude":"48.276950836182"},"address":{"address":"Excepturi occaecati voluptatum sed nihil non quia. Ea illo soluta voluptatem ab. Qui ullam nostrum nam quas dolor facilis et cupiditate.","latitude":"845583841","longitude":"955"},"emails":[{"id":3,"email":"eriberto.parisian@example.com"},{"id":4,"email":"vgerlach@example.net"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/hotels/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the hotel.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 300 characters.'
+        required: true
+        example: wmjhziuknkwqjbyd
+        type: string
+        custom: []
+      city_id:
+        name: city_id
+        description: ''
+        required: true
+        example: voluptatem
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: wmjhziuknkwqjbyd
+      city_id: voluptatem
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/hotels/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the hotel.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
